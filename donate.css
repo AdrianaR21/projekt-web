@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.donation-container {
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(249, 187, 234);
+  border: 1px solid #ddd;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 600px;
+}
+
+.header-text {
+  font-size: 25px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.donation-form {
+  text-align: center;
+}
+
+.amounts {
+  margin: 20px 0;
+}
+
+.amounts input[type="radio"] {
+  margin-right: 5px;
+}
+
+.amounts label {
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.payment-section {
+  margin: 20px 0;
+}
+
+.payment-title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.payment-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 48%; /* Makes buttons fit in one line */
+  margin: 5px 1%;
+}
+
+.credit-card {
+  background-color: #0056b3; /* Blue */
+}
+
+.paypal {
+  background-color: #ffc439; /* Yellow */
+}
+
+.payment-logos img {
+  width: 50px;
+  margin: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: blue;
+  border: none;
+  cursor: pointer;
+}

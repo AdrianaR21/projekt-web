@@ -1,0 +1,104 @@
+/* Reset some basic elements */
+body, h2, h5, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+   
+}
+
+/* Header */
+header {
+    background: #333;
+    background-color:  rgb(249, 187, 234);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo and navigation styles */
+.logo {
+    padding-left: 600px;
+    font-size: 30px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+/* Styling for the diets section */
+#diets {
+    padding: 20px;
+    background:  #f2c5ef;
+}
+
+.diet-container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 10px;
+   
+}
+.diet-container h5{
+    font-size: 25px;
+    padding-left: 450px;
+    color: white;
+}
+
+.diet-plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.diet, .diet-plan {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.diet img, .diet-plan img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.diet h6, .diet-plan h2 {
+    margin: 10px 0;
+}
+
+.button {
+    background:  rgb(249, 187, 234);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.button:hover {
+    opacity: 0.8;
+    background-color: #e69bf8;
+}
+
+@media (max-width: 768px) {
+    .diet-plans {
+        grid-template-columns: 1fr;
+    }
+}

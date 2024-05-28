@@ -1,0 +1,336 @@
+:root{
+    --green:rgb(249, 187, 234);
+ }
+ 
+ * {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6em;
+    overflow-x:hidden ;
+}
+section {
+    padding:35rem 5%;
+}
+/*header section style */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:rgb(249, 187, 234);
+    padding: 2em 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 2rem;
+    color:white;
+    border-radius: .3rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgb(249, 187, 234);
+    display: none;
+}
+header .logo{
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+}
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 0.5rem;
+    color:white;
+}
+header .navbar a:hover{
+    color: rgb(249, 187, 234);
+    border-radius: 3px;
+}
+
+
+/*home section style*/
+.home{
+    background: url(image/WhatsApp\ Image\ 2024-05-01\ at\ 15.02.53_9042009b.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1 {
+    font-size: 80px;
+    margin-top: 70px;
+}
+.content p {
+    font-size: 30px;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 40px;
+}
+.btn {
+    position: unset;
+    top: 50%;
+    left: 50%;
+    border: none;
+    color:white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+    background: transparent;
+    border: 3.3px solid #f178eb;
+}
+.btn:hover{
+    background-color: #f6dff8;
+    color: white;
+}
+/*About section setyle*/
+
+.about-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color:rgb(249, 187, 234) ;
+}
+
+.text-section {
+    flex: 3;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+.text-section h2 {
+    color: white;
+    text-align: center;
+}
+.text-section p{
+    color: white;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    
+}
+
+.image-section img {
+    width: 393px;
+    height: 375px;
+    border-radius: 0;
+} 
+/*promotion atyle section*/
+.promotion-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color:rgb(249, 212, 239) ;
+}
+
+.text-sct {
+    padding: 40px;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center; 
+    flex: 1; 
+}
+
+.text-sct h1 {
+    font-size: 50px;
+    color: rgb(249, 134, 220);
+    margin-bottom: 10px;
+}
+
+.text-sct p {
+    font-size: 50px;
+    color: rgb(238, 70, 196);
+    margin-bottom: 30px;
+}
+
+.bttn {
+    background-color: white;
+    display: inline-block;
+    width: 200px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color:rgb(249, 187, 234);
+}
+
+.bttn:hover {
+    background-color: #e7ebe4;
+}
+
+.image-sct {
+    width: auto;
+}
+
+.image-sct img {
+    width: 670px;
+    height: 450px;
+    border-radius: 0;
+}
+/* Contact Section Styles */
+.contact-container{
+    background: url(image/I3.png);
+    background-size:cover;
+    background-position: center;
+    padding: 1rem 4%;
+    width: 1600px;
+    height: 400px;
+}
+
+.contact-form-container {
+    padding:10px;
+    border-radius: 5px;
+    margin: 50px;
+    text-align: center;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+     width: 100%;
+     padding: 10px; 
+    border-radius: 5px;
+    border: 1px solid #c3c2c2;
+}
+ 
+button[type="submit"] {
+    background-color:rgb(226, 119, 234);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    }
+
+button[type="submit"]:hover{
+    color: #efbaee;
+}
+/*Faqs style section*/
+.FAQ{
+    padding: 3%;
+}
+.questions-container{
+    background: url(image/i6.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.questions-container h4{
+    color:white;
+    font-size: 30px;
+    margin: 1.5em 0;
+    text-align: center;
+    text-decoration: underline;
+}
+.accordion{
+    background:rgb(249, 187, 234) ;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+    padding:10px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.accordion i{
+    font-size: 1.6rem;
+}
+.active, .accordion:hover{
+    background: rgb(249, 187, 234);
+}
+.pannel{
+    padding: 0;
+    overflow: hidden;
+    background: white;
+    display: none;
+}
+.pannel p{
+    color: #0c0c0c;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+.faq{
+    border:1px solid black;
+    margin:10px 0;
+}
+.faq.active{
+    border: none;
+}
+/*map style section*/
+.containerr{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+iframe{
+    width: 100%;
+    height: 80vh;
+}
+
+@media screen and (max-width: 600px) {
+    .containerr {
+        height: 50vh; 
+    }
+
+    iframe {
+        width: 100%; 
+        height: 50vh;
+    }
+}

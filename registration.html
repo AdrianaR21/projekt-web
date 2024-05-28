@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+    <link rel="stylesheet" href="registraton.css">
+</head>
+<body>
+
+<form id="myForm">
+    <label for="emri">Emri fondacinit:</label><br>
+    <input type="text" id="emri" name="emri"><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    
+    <label for="gjinia">shtetesi</label><br>
+    <input type="radio" id="mashkull" name="gjinia" value="mashkull">
+    <label for="mashkull">Huaj</label>
+    <input type="radio" id="femer" name="gjinia" value="femer">
+    <label for="femer">Shiptare</label><br>
+    
+    <label for="grupmosha">Vite ne treg:</label><br>
+    <input type="checkbox" id="adoleshent" name="adoleshent" value="adoleshent">
+    <label for="preferenca1">1-5</label>
+    <input type="checkbox" id="mesem" name="mesem" value="mesem">
+    <label for="preferenca2">6-15</label><br>
+    <input type="checkbox" id="rritur" name="rritur" value="rritur">
+    <label for="preferenca3">16-30+</label><br>
+
+    
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    
+    <label for="konfirmoPassword">Konfirmo Password:</label><br>
+    <input type="password" id="konfirmoPassword" name="konfirmoPassword"><br>
+    
+    <label for="numriCelularit">Numri i Celularit:</label><br>
+    <input type="text" id="numriCelularit" name="numriCelularit" pattern="[0-9]{3}-[0-9]{7}"><br>
+    
+    <label for="zgjedhja">Statusi:</label><br>
+<select id="zgjedhja" name="zgjedhja" required>
+    <option value="">Zgjidhni Statusin</option>
+    <option value="opcioni1">Fitimprurese</option>
+    <option value="opcioni2">Jofitimprurese</option>
+</select><br>
+
+    
+    <input type="file" id="file" name="file" accept=".jpg, .pdf, .doc"><br>
+    
+    <button type="submit">Regjistrohu</button>
+    <a class="bttn" href="index.html">Back</a>
+</form>
+
+<script src="registration.js"></script>
+
+</body>
+</html>
